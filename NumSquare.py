@@ -9,56 +9,21 @@
 # 100     1 4 9 16 25 36 49 64 81 100
 # 99      1 4 9 16 25 36 49 64 81
 
-print("\n50      1 4 9 16 25 36 49\n")
 n = 1
-while n <= 7:
-    print(n ** 2)
+k = 50
+# k = 10
+# k = 9
+# k = 4
+# k = 1
+# k = 100
+# k = 99
+
+result = 1
+
+while sum:
+    result = n ** 2
     n += 1
-
-print("-" * 150)
-
-print("\n10      1 4 9\n")
-n = 1
-while n <= 3:
-    print(n ** 2)
-    n += 1
-
-print("-" * 150)
-
-print("\n9       1 4 9\n")
-n = 1
-while n <= 3:
-    print(n ** 2)
-    n += 1
-
-print("-" * 150)
-
-print("\n4       1 4\n")
-n = 1
-while n <= 2:
-    print(n ** 2)
-    n += 1
-
-print("-" * 150)
-
-print("\n1       1\n")
-n = 1
-while n <= 1:
-    print(n ** 2)
-    n += 1
-
-print("-" * 150)
-
-print("\n100     1 4 9 16 25 36 49 64 81 100\n")
-n = 1
-while n <= 10:
-    print(n ** 2)
-    n += 1
-
-print("-" * 150)
-
-print("\n99      1 4 9 16 25 36 49 64 81\n")
-n = 1
-while n <= 9:
-    print(n ** 2)
-    n += 1
+    if result <= k:
+        print(result)
+    else:
+        break
