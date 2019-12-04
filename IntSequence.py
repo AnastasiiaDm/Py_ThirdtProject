@@ -8,26 +8,37 @@
 
 n = 5
 length = 0
-sum = 0
-count = 0
-unCount = 0
+result = 0
+even = 0
+odd = 0
+maxNum = 0
+minNum = 0
 
 while n > 0:
     # print(n)
     if ((n / 2) != (n // 2)):
-        unCount += 1
-    else: count += 1
+        odd += 1
+    else: even += 1
 
-    sum += n
+    result += n
+    if n > maxNum:
+        maxNum = n
+
+    if minNum == 0:
+        minNum = n
+
+    elif minNum > n:
+        minNum = n
+
     n -= 1
     length +=1
 print('\nколичество введённых чисел (завершающий 0 не считается):', length)
-print('сумма чисел:', sum)
-print('среднее арифметическое (не считая завершающего числа 0):', sum // length)
-print('максимальное значение:',(n + 1) * 5)
-print('минимальное значение:',n + 1)
-print('количество чётных:',count)
-print('количество не чётных:',unCount)
+print('сумма чисел:', result)
+print('среднее арифметическое (не считая завершающего числа 0):', result // length)
+print('максимальное значение:',maxNum)
+print('минимальное значение:',minNum)
+print('количество чётных:',even)
+print('количество не чётных:',odd)
 
 
 
